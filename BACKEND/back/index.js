@@ -6,9 +6,10 @@ app.use(cors());
 app.use(express.json());
 const port = 5000;
 
+const data = Math.floor(Math.random() * 10);
 const Todo = [
   {
-    id: "1",
+    id: data,
     task: "Brush teeth",
     completed: false,
   },

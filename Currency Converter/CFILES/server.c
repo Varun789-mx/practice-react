@@ -44,5 +44,12 @@ int main(int argc, char *argv[])
     {
         error("Binding failed");
     }
+    listen(sockfd,5);
+    clilen = sizeof(cli_addr);
+    newsock_fd = accept(sockfd,(struct &servaddr)&cli_addr,&clilen);
+    if(newsock_fd < 0) { 
+        error("Error in accepting connection");
+    }
+    
 
 }

@@ -5,7 +5,7 @@
 #include <sys/socket.h>
 #include <stdlib.h>
 #include <netinet/in.h>
-#define PORT 8080
+
 #define BUFFER_SIZE 255
 
 void error(const char *msg)
